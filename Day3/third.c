@@ -1,0 +1,88 @@
+#include<stdio.h>
+int main()
+{
+	int amt,notes,tot=0;
+	scanf("%d",&amt);
+	if(amt>=500)
+	{
+		notes=amt/500;
+		amt-=(notes*500);
+		printf("\n500*%d=%d",notes,notes*500);
+		tot+=notes;
+	}
+	 if(amt>=200)
+	 {
+	 	notes=amt/200;
+		amt-=(notes*200);
+		printf("\n200*%d=%d",notes,notes*200);
+		tot+=notes;
+	 }
+	  if(amt>=100)
+	 {
+	 	notes=amt/100;
+		amt-=(notes*100);
+		printf("\n100*%d=%d",notes,notes*100);
+		tot+=notes;
+	 }
+	  if(amt>=50)
+	 {
+	 	notes=amt/50;
+		amt-=(notes*50);
+		printf("\n50*%d=%d",notes,notes*50);
+		tot+=notes;
+	 }
+	  if(amt>=20)
+	 {
+	 	notes=amt/20;
+		amt-=(notes*20);
+		printf("\n20*%d=%d",notes,notes*20);
+		tot+=notes;
+	 }
+	  if(amt>=10)
+	 {
+	 	notes=amt/10;
+		amt-=(notes*10);
+		printf("\n10*%d=%d",notes,notes*10);
+		tot+=notes;
+	 }
+	  if(amt>=5)
+	 {
+	 	notes=amt/5;
+		amt-=(notes*5);
+		printf("\n5*%d=%d",notes,notes*5);
+		tot+=notes;
+	 }
+	  if(amt>=2)
+	 {
+	 	notes=amt/2;
+		amt-=(notes*2);
+		printf("\n2*%d=%d",notes,notes*2);
+		tot+=notes;
+	 }
+	  if(amt>=1)
+	 {
+	 	notes=amt/1;
+		amt-=(notes*1);
+		printf("\n200*%d=%d",notes,notes*1);
+		tot+=notes;
+	 }
+	 printf("\n%d",tot);
+	 
+	return 0;
+}
+//4563
+//500*9=4500
+//50*1=50
+//10*1=10
+//2*1=2
+//1*1=1
+//13
+//
+//400
+//200*2=400
+//2
+//
+//4563/500=9      ||no500notes = amt/500
+//4563-(500*9)=63 ||amt=amt-(500*no500notes)
+//
+
